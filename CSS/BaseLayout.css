@@ -1,0 +1,244 @@
+@font-face{
+    font-family: "Open-Sans";
+    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Work_Sans";
+    src: url(../fonts/WorkSans-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Work_Sans_bold";
+    src: url(../fonts/WorkSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+a,h1,h2,h3,#main-title,#mobile-menu-text{
+    font-family: "Work_Sans";
+    font-weight: lighter;
+}
+
+.smalltitle{
+    font-family: "Work_Sans_bold";
+}
+
+a{
+    text-decoration: none;
+}
+
+#colors{
+    color: #0b0b0b;
+    color: #121212;
+    color: #aa7b2b;
+    color: #a54b4b;
+    color: #670404;
+    color: #f6f6f6;
+    color: #afafaf;
+    color: #505050;
+}
+
+.primary-font-color,h1,h2,h3{
+    color: #aa7b2b;
+}
+
+.secondary-font-color,a{
+    color: #670404;
+}
+
+.dark-background{
+    background-color: #121212;
+    color: #afafaf;
+}
+
+.light-background{
+    background-color: #f6f6f6;
+    color: #505050;
+}
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+*{
+    color: inherit;
+    font-size: inherit;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    margin-bottom: 240px; /* footer area in case content is too small*/
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    box-shadow:0 -10px 15px 0px #505050;
+}
+
+#menu-bar{
+    width: 100%;
+    position: fixed;
+}
+
+
+#header-background{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+
+#footer-divider{
+    position: relative;
+    height: 100px;
+    box-shadow:0 10px 10px -15px #505050;
+    margin: auto;
+}
+
+footer{
+    position: absolute;
+    padding-top: 10px;
+    bottom: -240px; /* footer area in case content is too small*/
+    height: 240px; /* footer area in case content is too small*/
+    width: 100%;
+}
+
+ul.social-networks{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.social-networks>li{
+    display: inline-block;
+}
+
+svg.icons{
+    fill: #aa7b2b;
+}
+#mail-icon{
+    width: 12px;
+    height: 12px;
+}
+
+#nav-bar-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#menu>ul>li{
+    text-align: center;
+
+}
+
+#menu>ul>li,#menu>ul>li>a,#mobile-menu>ul>li>a,#mobile-menu>ul>li{
+    display: block;
+}
+
+#subnav>ul>li>a{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h2{
+    font-size: 28px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+.list>li{
+    margin: 10px 0 10px 0;
+}
+
+.list>li::before{
+    content: "\2022\a0\a0";
+}
+
+p,.section>ul>li{
+    font-family: "Open-Sans";
+    font-size: 18px;
+    line-height: 1.5em;
+    overflow-wrap: break-word;
+}
+
+a.content-link{
+    font-family: "Open-Sans";
+}
+
+p{
+    margin-top: 1.5em;
+}
+
+a.content-link{
+    text-decoration: underline;
+}
+
+#recent-updates{
+    height: 200px;
+}
+
+a.recent-update:hover{
+    text-decoration: underline;
+}
+
+.picture-format{
+    display: block;
+    margin: 0 auto 0 auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 0 10px -5px #505050;
+}
+
+.square-img-600{
+    height: 600px;
+    width: 600px;
+}
+
+#sections{
+    position: relative;
+}
+
+.section{
+    position: relative;
+    margin: 20px 0 0 0;
+    padding: 40px 30px 10px 30px;
+}
+
+.ontop{
+    z-index: 5; /*Prevents the nav bar from going behind objects when scrolling*/
+}
+.text{
+    font-size: 18px;
+}
+
+.smalltext{
+    font-size: 14px;
+}
+
+.scroll{
+    overflow-y: scroll;
+}
+

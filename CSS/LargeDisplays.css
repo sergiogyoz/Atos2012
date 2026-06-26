@@ -1,0 +1,195 @@
+header{
+    height: 300px;
+}
+
+#content{
+    width: 1080px;
+    margin: 0 auto 0 auto;
+}
+
+#sections{
+    display: inline-block;
+    width: 840px;
+    padding: 0 30px 0px 30px;
+}
+
+#menu-bar{
+    height: 40px;
+}
+
+#mobile-menu-layout{
+    display: none;
+}
+
+#main-title{
+    display: none;
+}
+
+.main-title-fixed{
+    position: fixed;
+    bottom: initial;
+    top: 0;
+}
+
+#header-background{
+    height: 300px;
+}
+
+.fade-in{
+    animation: fadein;
+    animation-duration: 1s;
+}
+
+@keyframes fadein{
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.menu-bar-slidedown{
+    animation: slidedown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slidedown{
+    0%{     top: -40px;}
+    60%{     top: -40px;}
+    100%{   top: 0px;}
+}
+
+
+
+h1{
+    font-size: 70px;
+    padding-top: 90px;
+}
+
+#menu{
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    transition: 0.5s;
+}
+
+#menu.transition{
+    box-shadow:0 0 10px -7px #505050;
+}
+
+#menu>ul>li{
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    padding: 0px;
+    padding-top: inherit;
+    width: initial;
+    text-align: center;
+    opacity: initial;
+    background-color: initial;
+}
+
+#menu>ul>li>a{
+    font-size: 20px;
+    padding: 5px 10px 0 10px;
+    height: 100%;
+    transition: background-color 200ms;
+}
+
+#menu>ul>li>a:hover{
+    background-color: #afafaf30; /*color outside the baselayout*/
+}
+
+#subnav{
+    display: inline-block;
+    position: sticky;
+    vertical-align: top;
+    margin-top: 10px;
+    top: 100px;
+    width: 120px;
+}
+
+#subnav>ul{
+    display: block;
+    width: 240px;
+}
+
+#subnav>ul>li>a{
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    white-space: nowrap;
+    transition: 250ms;
+}
+#subnav>ul>li>a:hover{
+    transform: translateX(1px);
+}
+
+a.current{
+    font-family: "Work_Sans_bold";
+/*    background-color: #afafaf50;*/
+}
+
+a.subcurrent{
+    font-family: "Work_Sans_bold";
+}
+
+.col{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.two-col>div>p{
+    margin-top: 80px; /*fix for look on */
+}
+
+.list>li{
+    text-indent: 1.5em;
+}
+
+#contact-me{
+    text-align: initial;
+}
+
+ul.social-networks{
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    justify-content: left;
+}
+
+ul.social-networks>li{
+    margin: 0 0 0 10px;
+}
+
+ul.social-networks>li>a>svg.icons{
+    width: 28px;
+    height: 28px;
+}
+
+.columnblock{
+    display: inline-block;
+}
+
+.top{
+    vertical-align: top;
+}
+
+.extrapadding{
+    padding: 20px 100px 20px 100px;
+}
+
+.one4th{
+    width: 25%;
+}
+
+.onehalf{
+    width: 50%;
+}
+
+.smalltext{
+    font-size: 16px;
+}
