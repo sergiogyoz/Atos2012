@@ -6,14 +6,14 @@
 
 @font-face{
     font-family: "Work_Sans";
-    src: url(../fonts/WorkSans-Light.ttf) format('truetype');
+    src: url(../fonts/Cinzel/CinzelDecorative-Regular.ttf) format('truetype');
     font-weight: normal;
     font-display: swap;
 }
 
 @font-face{
     font-family: "Work_Sans_bold";
-    src: url(../fonts/WorkSans-Regular.ttf) format('truetype');
+    src: url(../fonts/Cinzel/CinzelDecorative-Bold.ttf) format('truetype');
     font-weight: normal;
     font-display: swap;
 }
@@ -41,14 +41,20 @@ a{
     color: #f6f6f6;
     color: #afafaf;
     color: #505050;
+
+    color: #000;
+    color: #f2dab6;
+    color: #eac599;
+    color: #734c47;
+    color: #505050;
 }
 
 .primary-font-color,h1,h2,h3{
-    color: #aa7b2b;
+    color: #000;
 }
 
 .secondary-font-color,a{
-    color: #670404;
+    color: #734c47;
 }
 
 .dark-background{
@@ -131,7 +137,7 @@ ul.social-networks>li{
 }
 
 svg.icons{
-    fill: #aa7b2b;
+    fill: #000;
 }
 #mail-icon{
     width: 12px;
@@ -175,7 +181,7 @@ h2{
     content: "\2022\a0\a0";
 }
 
-p,.section>ul>li{
+p,.section>ul>li, .list{
     font-family: "Open-Sans";
     font-size: 18px;
     line-height: 1.5em;
